@@ -1,0 +1,241 @@
+*{
+    font-family: sans-serif;
+    color: #02475b;
+}
+
+#container{
+    width: 70%;
+    margin: auto;
+    background-color: whitesmoke;
+
+}
+body{
+    background-color: rgb(220, 223, 206);
+}
+#navbar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#navbar>div{
+    /* border: 1px solid blue; */
+    width: 95px;
+    
+}
+#navbar>div>img{
+    width: 80px;
+    height: 60px ;
+    margin: 10px;
+}
+.pad{
+    
+    padding: 30px;
+    
+    
+}
+.pad>a{
+    color: #02475b;
+    text-decoration: none;
+    font-weight: bold;
+}
+#one{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+.home{
+    color: orange;
+    font-weight: bold;
+    padding-right: 20px;
+}
+#one>a{
+    text-decoration: none;
+}
+.home1{
+    color: #02475b;
+}
+#card1{
+    width: 675px;
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 230px;
+    /* border:  1px solid red; */
+    background-color: #ffffff;
+}
+#card1>input{
+    width: 90%;
+    height: 50px;
+    border: 0px;
+    border-bottom: 2px solid #66909C;
+    font-size: 16px;
+}
+#cities{
+    display: flex;
+    justify-content: space-around;
+}
+#cities>div{
+    border: 0.5px solid grey;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    color: #00b38e;
+}
+#card2{
+    /* border: 1px solid red; */
+    width: 330px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    
+}
+#card2>h3,h5{
+    margin-left: 20px;
+}
+#card2>img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#cards{
+    display: flex;
+}
+#random{
+    border-bottom: 0.5px solid black;
+    width: 90%;
+    margin: auto;
+}
+#random>div{
+    display: flex;
+    height: 30px;
+}
+#random>div>a{
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 20px;
+    color: #02475b;
+}
+#random>div>img{
+    width: 18px;
+    height: 18px ;
+}
+#random1{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+#random1>p{
+    font-size: 12px;
+    text-align: center;
+    color: #02475b;
+}
+#preeti{
+    /* border: 1px solid red; */
+    margin-left: 2px;
+    padding-left: 20px;
+}
+#preeti>img{
+    width: 675px;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+#oneone{
+    border-bottom: 0.5px solid black;
+    padding-left: 20px;
+    height: 50px;
+}
+#block{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#block>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    width: 154px;
+    height: 194px;
+    margin-top: 20px;
+}
+#block>div>h3{
+    font-size: 14px;
+    color: #02475b;
+    text-align: center;
+}
+#block>div>div{
+    display: flex;
+    justify-content: center;
+}
+#block>div>div>img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+#block>div>p{
+    font-size: 12px;
+    text-align: center;
+    color: #02475B99;
+}
+#block>div>p~p{
+    font-size: 10px;
+    text-align: center;
+    color: #02475B;
+}
+#grid{
+    width: 95%;
+    /* height: 300px; */
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,325px);
+    grid-template-rows: repeat(1,110px);
+    gap: 10px;
+}
+#grid>div{
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    display: flex;
+    
+
+
+}
+#grid>div>div{
+    border-bottom: 0.5px solid black;
+    width: 50px;
+    height: 100%;
+}
+#grid>div>div>img{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+}
+#grid>div>div:nth-child(2){
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+#grid>div>div:nth-child(2)>p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 3px;
+}
+#middle{
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    
+}
+
+
+

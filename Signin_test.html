@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Signin_test.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div>
+                <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="">
+            </div>
+            <div class="pad"></div>
+            <div class="pad"></div>
+            
+            <div class="pad"> <a href="Doctors.html">Appointments</a> </div>
+            <div class="pad"><a href="index.html">Health Record</a></div>
+            <div class="pad"><a href="">Medicines</a></div>
+            <div class="pad"><a href="lab.html">Lab Tests</a></div>
+            <div class="pad"><a href="covid.html">Covid-19</a></div>
+            <div class="pad"><a href="cart.html">cart</a></div>
+            <div class="pad"><a href="Signup_test.html">Signup/ Login</a></div>
+        </div>
+    </div>
+
+    <div id="container1">
+        <h1>Sign in</h1>
+        <input id="email" class="in" type="email" placeholder="Email address"/>
+        <input id="pass" class="in" type="password" placeholder="Password" />
+        <div style="display: flex;">
+        <input id="check" type="checkbox" />
+        <p>Keep me signed in</p>
+        </div>
+        <button>Sign in</button>
+        <br>
+        <a id="fp" href="">Forgot password?</a>
+        <p style="text-align: center;">Don't have an account?<a href="Signup_test.html">Create one</a></p>
+        <p style="text-align:center;margin-top: 20px;">or continue with</p>
+       
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",Userlogin);
+    var regdUsers = JSON.parse(localStorage.getItem("UserDatabase"));
+
+    function Userlogin(event)
+    {
+        var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#pass").value;
+        
+        
+        for(var i=0;i<regdUsers.length;i++)
+        {   
+            if(regdUsers[i].EmailAdd == email && regdUsers[i].Password == pass)
+            {
+                alert("You Have Been Sign in Successfully")
+                window.location.href="index.html";
+                return;
+            }
+           
+        }
+        alert("Username or password is wrong please try again.");
+    }
+</script>
